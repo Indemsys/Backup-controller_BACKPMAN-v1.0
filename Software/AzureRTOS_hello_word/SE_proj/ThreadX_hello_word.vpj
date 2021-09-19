@@ -1,0 +1,452 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="Other C/C++"
+    WorkingDir=".">
+    <Config
+        Name="Debug"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bdThreadX_hello_word"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                OutputExts="*.o"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -g %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -g -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Config
+        Name="Release"
+        Type="cpp"
+        DebugCallbackName="gdb"
+        OutputFile="%bdThreadX_hello_word"
+        CompilerConfigName="Latest Version">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                OutputExts="*.o"
+                RunFromDir="%rw">
+                <Exec CmdLine='cc -c -O %i %defd -o "%bd%n.o" "%f"'/>
+            </Target>
+            <Target
+                Name="Link"
+                MenuCaption="&amp;Link">
+                <Exec CmdLine='cc -O -o "%o" %f %libs'/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" build "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%(VSLICKBIN1)vsbuild" rebuild "%w" "%r"'/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='vsdebugio -prog "%o"'/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                BuildFirst="1"
+                CaptureOutputWith="ProcessBuffer"
+                RunFromDir="%rw">
+                <Exec CmdLine='"%o"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Rules Name="Compile">
+        <Rule
+            InputExts="*.s"
+            OutputExts="*.o"
+            LinkObject="1">
+            <Exec CmdLine='as -o "%bd%n.o" "%f"'/>
+        </Rule>
+    </Rules>
+    <CustomFolders>
+        <Folder
+            Name="Source Files"
+            Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.scala;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d;*.m;*.mm;*.go;*.groovy;*.gsh"
+            GUID="{641232E5-D04C-467C-A957-597640B8D428}"></Folder>
+        <Folder
+            Name="Header Files"
+            Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.h++;*.inc;*.sh;*.cpy;*.if"
+            GUID="{8E1BFA9F-890E-4203-BBDC-FFE8FDF215EF}"></Folder>
+        <Folder
+            Name="Resource Files"
+            Filters="*.ico;*.cur;*.dlg"
+            GUID="{C093B738-EB74-498D-BBCE-05B324316332}"/>
+        <Folder
+            Name="Bitmaps"
+            Filters="*.bmp"
+            GUID="{FCA98EC0-FC06-4D6E-8C38-FAD7086EFF88}"/>
+        <Folder
+            Name="Other Files"
+            Filters=""
+            GUID="{D6EFBA35-44FA-4563-8DF0-50EE11DC0C31}"/>
+    </CustomFolders>
+    <List Name="RTE">
+    </List>
+    <Files AutoFolders="DirectoryView">
+        <Folder Name="../board">
+            <F N="../board/board.c"/>
+            <F N="../board/board.h"/>
+            <F N="../board/clock_config.c"/>
+            <F N="../board/clock_config.h"/>
+            <F N="../board/peripherals.c"/>
+            <F N="../board/peripherals.h"/>
+            <F N="../board/pin_mux.c"/>
+            <F N="../board/pin_mux.h"/>
+        </Folder>
+        <Folder Name="../CMSIS">
+            <F N="../CMSIS/arm_common_tables.h"/>
+            <F N="../CMSIS/arm_const_structs.h"/>
+            <F N="../CMSIS/arm_math.h"/>
+            <F N="../CMSIS/cmsis_armcc.h"/>
+            <F N="../CMSIS/cmsis_armclang.h"/>
+            <F N="../CMSIS/cmsis_armclang_ltm.h"/>
+            <F N="../CMSIS/cmsis_compiler.h"/>
+            <F N="../CMSIS/cmsis_gcc.h"/>
+            <F N="../CMSIS/cmsis_iccarm.h"/>
+            <F N="../CMSIS/cmsis_version.h"/>
+            <F N="../CMSIS/core_cm4.h"/>
+            <F N="../CMSIS/mpu_armv7.h"/>
+        </Folder>
+        <Folder Name="../component">
+            <Folder Name="lists">
+                <F N="../component/lists/generic_list.c"/>
+                <F N="../component/lists/generic_list.h"/>
+            </Folder>
+            <Folder Name="serial_manager">
+                <F N="../component/serial_manager/serial_manager.c"/>
+                <F N="../component/serial_manager/serial_manager.h"/>
+                <F N="../component/serial_manager/serial_port_internal.h"/>
+                <F N="../component/serial_manager/serial_port_uart.c"/>
+                <F N="../component/serial_manager/serial_port_uart.h"/>
+            </Folder>
+            <Folder Name="uart">
+                <F N="../component/uart/lpuart_adapter.c"/>
+                <F N="../component/uart/uart.h"/>
+            </Folder>
+        </Folder>
+        <Folder Name="../device">
+            <F N="../device/fsl_device_registers.h"/>
+            <F N="../device/MKE18F16.h"/>
+            <F N="../device/MKE18F16_features.h"/>
+            <F N="../device/system_MKE18F16.c"/>
+            <F N="../device/system_MKE18F16.h"/>
+        </Folder>
+        <Folder Name="../drivers">
+            <F N="../drivers/fsl_clock.c"/>
+            <F N="../drivers/fsl_clock.h"/>
+            <F N="../drivers/fsl_common.c"/>
+            <F N="../drivers/fsl_common.h"/>
+            <F N="../drivers/fsl_gpio.c"/>
+            <F N="../drivers/fsl_gpio.h"/>
+            <F N="../drivers/fsl_lpuart.c"/>
+            <F N="../drivers/fsl_lpuart.h"/>
+            <F N="../drivers/fsl_port.h"/>
+            <F N="../drivers/fsl_smc.c"/>
+            <F N="../drivers/fsl_smc.h"/>
+        </Folder>
+        <Folder Name="../source">
+            <F N="../source/hello_world.c"/>
+        </Folder>
+        <Folder Name="../startup">
+            <F N="../startup/startup_MKE18F16.s"/>
+        </Folder>
+        <Folder Name="../ThreadX">
+            <Folder Name="inc">
+                <F N="../ThreadX/inc/tx_api.h"/>
+                <F N="../ThreadX/inc/tx_block_pool.h"/>
+                <F N="../ThreadX/inc/tx_byte_pool.h"/>
+                <F N="../ThreadX/inc/tx_event_flags.h"/>
+                <F N="../ThreadX/inc/tx_initialize.h"/>
+                <F N="../ThreadX/inc/tx_mutex.h"/>
+                <F N="../ThreadX/inc/tx_queue.h"/>
+                <F N="../ThreadX/inc/tx_semaphore.h"/>
+                <F N="../ThreadX/inc/tx_thread.h"/>
+                <F N="../ThreadX/inc/tx_timer.h"/>
+                <F N="../ThreadX/inc/tx_trace.h"/>
+                <F N="../ThreadX/inc/tx_user.h"/>
+            </Folder>
+            <Folder Name="port">
+                <Folder Name="inc">
+                    <F N="../ThreadX/port/inc/tx_port.h"/>
+                </Folder>
+                <Folder Name="src">
+                    <F N="../ThreadX/port/src/tx_iar.c"/>
+                    <F N="../ThreadX/port/src/tx_misra.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_context_restore.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_context_save.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_interrupt_control.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_interrupt_disable.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_interrupt_restore.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_schedule.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_stack_build.s"/>
+                    <F N="../ThreadX/port/src/tx_thread_system_return.s"/>
+                    <F N="../ThreadX/port/src/tx_timer_interrupt.s"/>
+                </Folder>
+            </Folder>
+            <Folder Name="src">
+                <F N="../ThreadX/src/tx_block_allocate.c"/>
+                <F N="../ThreadX/src/tx_block_pool_cleanup.c"/>
+                <F N="../ThreadX/src/tx_block_pool_create.c"/>
+                <F N="../ThreadX/src/tx_block_pool_delete.c"/>
+                <F N="../ThreadX/src/tx_block_pool_info_get.c"/>
+                <F N="../ThreadX/src/tx_block_pool_initialize.c"/>
+                <F N="../ThreadX/src/tx_block_pool_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_block_pool_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_block_pool_prioritize.c"/>
+                <F N="../ThreadX/src/tx_block_release.c"/>
+                <F N="../ThreadX/src/tx_byte_allocate.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_cleanup.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_create.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_delete.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_info_get.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_initialize.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_prioritize.c"/>
+                <F N="../ThreadX/src/tx_byte_pool_search.c"/>
+                <F N="../ThreadX/src/tx_byte_release.c"/>
+                <F N="../ThreadX/src/tx_event_flags_cleanup.c"/>
+                <F N="../ThreadX/src/tx_event_flags_create.c"/>
+                <F N="../ThreadX/src/tx_event_flags_delete.c"/>
+                <F N="../ThreadX/src/tx_event_flags_get.c"/>
+                <F N="../ThreadX/src/tx_event_flags_info_get.c"/>
+                <F N="../ThreadX/src/tx_event_flags_initialize.c"/>
+                <F N="../ThreadX/src/tx_event_flags_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_event_flags_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_event_flags_set.c"/>
+                <F N="../ThreadX/src/tx_event_flags_set_notify.c"/>
+                <F N="../ThreadX/src/tx_initialize_high_level.c"/>
+                <F N="../ThreadX/src/tx_initialize_kernel_enter.c"/>
+                <F N="../ThreadX/src/tx_initialize_kernel_setup.c"/>
+                <F N="../ThreadX/src/tx_misra.c"/>
+                <F N="../ThreadX/src/tx_mutex_cleanup.c"/>
+                <F N="../ThreadX/src/tx_mutex_create.c"/>
+                <F N="../ThreadX/src/tx_mutex_delete.c"/>
+                <F N="../ThreadX/src/tx_mutex_get.c"/>
+                <F N="../ThreadX/src/tx_mutex_info_get.c"/>
+                <F N="../ThreadX/src/tx_mutex_initialize.c"/>
+                <F N="../ThreadX/src/tx_mutex_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_mutex_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_mutex_prioritize.c"/>
+                <F N="../ThreadX/src/tx_mutex_priority_change.c"/>
+                <F N="../ThreadX/src/tx_mutex_put.c"/>
+                <F N="../ThreadX/src/tx_queue_cleanup.c"/>
+                <F N="../ThreadX/src/tx_queue_create.c"/>
+                <F N="../ThreadX/src/tx_queue_delete.c"/>
+                <F N="../ThreadX/src/tx_queue_flush.c"/>
+                <F N="../ThreadX/src/tx_queue_front_send.c"/>
+                <F N="../ThreadX/src/tx_queue_info_get.c"/>
+                <F N="../ThreadX/src/tx_queue_initialize.c"/>
+                <F N="../ThreadX/src/tx_queue_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_queue_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_queue_prioritize.c"/>
+                <F N="../ThreadX/src/tx_queue_receive.c"/>
+                <F N="../ThreadX/src/tx_queue_send.c"/>
+                <F N="../ThreadX/src/tx_queue_send_notify.c"/>
+                <F N="../ThreadX/src/tx_semaphore_ceiling_put.c"/>
+                <F N="../ThreadX/src/tx_semaphore_cleanup.c"/>
+                <F N="../ThreadX/src/tx_semaphore_create.c"/>
+                <F N="../ThreadX/src/tx_semaphore_delete.c"/>
+                <F N="../ThreadX/src/tx_semaphore_get.c"/>
+                <F N="../ThreadX/src/tx_semaphore_info_get.c"/>
+                <F N="../ThreadX/src/tx_semaphore_initialize.c"/>
+                <F N="../ThreadX/src/tx_semaphore_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_semaphore_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_semaphore_prioritize.c"/>
+                <F N="../ThreadX/src/tx_semaphore_put.c"/>
+                <F N="../ThreadX/src/tx_semaphore_put_notify.c"/>
+                <F N="../ThreadX/src/tx_thread_create.c"/>
+                <F N="../ThreadX/src/tx_thread_delete.c"/>
+                <F N="../ThreadX/src/tx_thread_entry_exit_notify.c"/>
+                <F N="../ThreadX/src/tx_thread_identify.c"/>
+                <F N="../ThreadX/src/tx_thread_info_get.c"/>
+                <F N="../ThreadX/src/tx_thread_initialize.c"/>
+                <F N="../ThreadX/src/tx_thread_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_thread_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_thread_preemption_change.c"/>
+                <F N="../ThreadX/src/tx_thread_priority_change.c"/>
+                <F N="../ThreadX/src/tx_thread_relinquish.c"/>
+                <F N="../ThreadX/src/tx_thread_reset.c"/>
+                <F N="../ThreadX/src/tx_thread_resume.c"/>
+                <F N="../ThreadX/src/tx_thread_shell_entry.c"/>
+                <F N="../ThreadX/src/tx_thread_sleep.c"/>
+                <F N="../ThreadX/src/tx_thread_stack_analyze.c"/>
+                <F N="../ThreadX/src/tx_thread_stack_error_handler.c"/>
+                <F N="../ThreadX/src/tx_thread_stack_error_notify.c"/>
+                <F N="../ThreadX/src/tx_thread_suspend.c"/>
+                <F N="../ThreadX/src/tx_thread_system_preempt_check.c"/>
+                <F N="../ThreadX/src/tx_thread_system_resume.c"/>
+                <F N="../ThreadX/src/tx_thread_system_suspend.c"/>
+                <F N="../ThreadX/src/tx_thread_terminate.c"/>
+                <F N="../ThreadX/src/tx_thread_time_slice.c"/>
+                <F N="../ThreadX/src/tx_thread_time_slice_change.c"/>
+                <F N="../ThreadX/src/tx_thread_timeout.c"/>
+                <F N="../ThreadX/src/tx_thread_wait_abort.c"/>
+                <F N="../ThreadX/src/tx_time_get.c"/>
+                <F N="../ThreadX/src/tx_time_set.c"/>
+                <F N="../ThreadX/src/tx_timer_activate.c"/>
+                <F N="../ThreadX/src/tx_timer_change.c"/>
+                <F N="../ThreadX/src/tx_timer_create.c"/>
+                <F N="../ThreadX/src/tx_timer_deactivate.c"/>
+                <F N="../ThreadX/src/tx_timer_delete.c"/>
+                <F N="../ThreadX/src/tx_timer_expiration_process.c"/>
+                <F N="../ThreadX/src/tx_timer_info_get.c"/>
+                <F N="../ThreadX/src/tx_timer_initialize.c"/>
+                <F N="../ThreadX/src/tx_timer_performance_info_get.c"/>
+                <F N="../ThreadX/src/tx_timer_performance_system_info_get.c"/>
+                <F N="../ThreadX/src/tx_timer_system_activate.c"/>
+                <F N="../ThreadX/src/tx_timer_system_deactivate.c"/>
+                <F N="../ThreadX/src/tx_timer_thread_entry.c"/>
+                <F N="../ThreadX/src/tx_trace_buffer_full_notify.c"/>
+                <F N="../ThreadX/src/tx_trace_disable.c"/>
+                <F N="../ThreadX/src/tx_trace_enable.c"/>
+                <F N="../ThreadX/src/tx_trace_event_filter.c"/>
+                <F N="../ThreadX/src/tx_trace_event_unfilter.c"/>
+                <F N="../ThreadX/src/tx_trace_initialize.c"/>
+                <F N="../ThreadX/src/tx_trace_interrupt_control.c"/>
+                <F N="../ThreadX/src/tx_trace_isr_enter_insert.c"/>
+                <F N="../ThreadX/src/tx_trace_isr_exit_insert.c"/>
+                <F N="../ThreadX/src/tx_trace_object_register.c"/>
+                <F N="../ThreadX/src/tx_trace_object_unregister.c"/>
+                <F N="../ThreadX/src/tx_trace_user_event_insert.c"/>
+                <F N="../ThreadX/src/txe_block_allocate.c"/>
+                <F N="../ThreadX/src/txe_block_pool_create.c"/>
+                <F N="../ThreadX/src/txe_block_pool_delete.c"/>
+                <F N="../ThreadX/src/txe_block_pool_info_get.c"/>
+                <F N="../ThreadX/src/txe_block_pool_prioritize.c"/>
+                <F N="../ThreadX/src/txe_block_release.c"/>
+                <F N="../ThreadX/src/txe_byte_allocate.c"/>
+                <F N="../ThreadX/src/txe_byte_pool_create.c"/>
+                <F N="../ThreadX/src/txe_byte_pool_delete.c"/>
+                <F N="../ThreadX/src/txe_byte_pool_info_get.c"/>
+                <F N="../ThreadX/src/txe_byte_pool_prioritize.c"/>
+                <F N="../ThreadX/src/txe_byte_release.c"/>
+                <F N="../ThreadX/src/txe_event_flags_create.c"/>
+                <F N="../ThreadX/src/txe_event_flags_delete.c"/>
+                <F N="../ThreadX/src/txe_event_flags_get.c"/>
+                <F N="../ThreadX/src/txe_event_flags_info_get.c"/>
+                <F N="../ThreadX/src/txe_event_flags_set.c"/>
+                <F N="../ThreadX/src/txe_event_flags_set_notify.c"/>
+                <F N="../ThreadX/src/txe_mutex_create.c"/>
+                <F N="../ThreadX/src/txe_mutex_delete.c"/>
+                <F N="../ThreadX/src/txe_mutex_get.c"/>
+                <F N="../ThreadX/src/txe_mutex_info_get.c"/>
+                <F N="../ThreadX/src/txe_mutex_prioritize.c"/>
+                <F N="../ThreadX/src/txe_mutex_put.c"/>
+                <F N="../ThreadX/src/txe_queue_create.c"/>
+                <F N="../ThreadX/src/txe_queue_delete.c"/>
+                <F N="../ThreadX/src/txe_queue_flush.c"/>
+                <F N="../ThreadX/src/txe_queue_front_send.c"/>
+                <F N="../ThreadX/src/txe_queue_info_get.c"/>
+                <F N="../ThreadX/src/txe_queue_prioritize.c"/>
+                <F N="../ThreadX/src/txe_queue_receive.c"/>
+                <F N="../ThreadX/src/txe_queue_send.c"/>
+                <F N="../ThreadX/src/txe_queue_send_notify.c"/>
+                <F N="../ThreadX/src/txe_semaphore_ceiling_put.c"/>
+                <F N="../ThreadX/src/txe_semaphore_create.c"/>
+                <F N="../ThreadX/src/txe_semaphore_delete.c"/>
+                <F N="../ThreadX/src/txe_semaphore_get.c"/>
+                <F N="../ThreadX/src/txe_semaphore_info_get.c"/>
+                <F N="../ThreadX/src/txe_semaphore_prioritize.c"/>
+                <F N="../ThreadX/src/txe_semaphore_put.c"/>
+                <F N="../ThreadX/src/txe_semaphore_put_notify.c"/>
+                <F N="../ThreadX/src/txe_thread_create.c"/>
+                <F N="../ThreadX/src/txe_thread_delete.c"/>
+                <F N="../ThreadX/src/txe_thread_entry_exit_notify.c"/>
+                <F N="../ThreadX/src/txe_thread_info_get.c"/>
+                <F N="../ThreadX/src/txe_thread_preemption_change.c"/>
+                <F N="../ThreadX/src/txe_thread_priority_change.c"/>
+                <F N="../ThreadX/src/txe_thread_relinquish.c"/>
+                <F N="../ThreadX/src/txe_thread_reset.c"/>
+                <F N="../ThreadX/src/txe_thread_resume.c"/>
+                <F N="../ThreadX/src/txe_thread_suspend.c"/>
+                <F N="../ThreadX/src/txe_thread_terminate.c"/>
+                <F N="../ThreadX/src/txe_thread_time_slice_change.c"/>
+                <F N="../ThreadX/src/txe_thread_wait_abort.c"/>
+                <F N="../ThreadX/src/txe_timer_activate.c"/>
+                <F N="../ThreadX/src/txe_timer_change.c"/>
+                <F N="../ThreadX/src/txe_timer_create.c"/>
+                <F N="../ThreadX/src/txe_timer_deactivate.c"/>
+                <F N="../ThreadX/src/txe_timer_delete.c"/>
+                <F N="../ThreadX/src/txe_timer_info_get.c"/>
+            </Folder>
+            <F N="../ThreadX/tx_initialize_low_level.s"/>
+        </Folder>
+        <Folder Name="../utilities">
+            <F N="../utilities/fsl_assert.c"/>
+            <F N="../utilities/fsl_debug_console.c"/>
+            <F N="../utilities/fsl_debug_console.h"/>
+            <F N="../utilities/fsl_debug_console_conf.h"/>
+            <F N="../utilities/fsl_str.c"/>
+            <F N="../utilities/fsl_str.h"/>
+        </Folder>
+    </Files>
+</Project>

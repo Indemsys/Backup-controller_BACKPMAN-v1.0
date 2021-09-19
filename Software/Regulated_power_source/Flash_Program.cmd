@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\SEGGER\JLink\JFlash.exe" -openprj.\ProgramFlash_MKE18F512.jflash -open.\OUTPUT\RPWRS.hex -auto -exit
