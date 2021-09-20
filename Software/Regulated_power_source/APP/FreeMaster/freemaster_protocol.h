@@ -80,7 +80,7 @@
 #define FMSTR_STC_URESERR           0x93U    /* User resources error */
 #define FMSTR_STC_INSTERR           0x94U    /* Bad instance index (e.g. recorder) */
 #define FMSTR_STC_INVOPCODE         0x95U    /* Invalid operation code (e.g. recorder) */
-#define FMSTR_STC_DEBUGTX_TEST      0xA9U    /* Artificial +©W test frame sent when DEBUG_TX is enabled */
+#define FMSTR_STC_DEBUGTX_TEST      0xA9U    /* Artificial +Â©W test frame sent when DEBUG_TX is enabled */
 
 /******************************************************************************
 * Protocol constants

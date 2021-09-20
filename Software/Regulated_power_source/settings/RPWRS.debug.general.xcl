@@ -2,7 +2,7 @@
 
 "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armJLINK.dll" 
 
-"d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\RPWRS.out" 
+"d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\RPWRS.out" 
 
 --plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
 

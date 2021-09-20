@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --backend -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --backend -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" "--debug_file=%~1" --backend -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" "--debug_file=%~1" --backend -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
 
 @echo off 
 :end

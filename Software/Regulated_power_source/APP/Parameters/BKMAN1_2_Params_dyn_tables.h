@@ -16,8 +16,8 @@
 
 typedef struct
 {
-    enum enm_parmnlev  level;    // Уровень в меню параметров
-    uint8_t            table_id; // Идентификатор таблицы
+    enum enm_parmnlev  level;    // РЈСЂРѕРІРµРЅСЊ РІ РјРµРЅСЋ РїР°СЂР°РјРµС‚СЂРѕРІ
+    uint8_t            table_id; // РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ С‚Р°Р±Р»РёС†С‹
     const char        *name;
     uint32_t           records_num;
 } T_params_table_info;
@@ -32,7 +32,7 @@ typedef struct
 } T_table_fields_props;
 
 
-// Демонстрационная структуры полей таблицы
+// Р”РµРјРѕРЅСЃС‚СЂР°С†РёРѕРЅРЅР°СЏ СЃС‚СЂСѓРєС‚СѓСЂС‹ РїРѕР»РµР№ С‚Р°Р±Р»РёС†С‹
 typedef struct
 {
     uint8_t       field1;

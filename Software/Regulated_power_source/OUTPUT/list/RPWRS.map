@@ -1,536 +1,278 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  19/Sep/2021  13:22:56
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  20/Sep/2021  18:03:39
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
-#        d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\RPWRS.out
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\RPWRS.out
 #    Map file     =
-#        d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map
 #    Command line =
-#        -f "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map.rsp"
-#        ("d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\ACS37800.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Analog_inputs.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\App_utils.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_ADC.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_CAN.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_clock_config.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_DMA.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_Flash.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_FreeMaster_vars.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_I2C.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\BKMAN1_2_monitor.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_Params.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_Params_dyn_tables.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_PINS.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_PIT.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_SPI.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_UART.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\CRC_utils.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\DCDC_DAC80501.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Filters.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_appcmd.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_can.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_pdbdm.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_pipes.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_protocol.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_rec.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_scope.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_serial.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver\freemaster_serial_lpuart.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_sha.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster_task.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_tsa.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_ures.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_utils.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster_vars_map.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_clock.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_common.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_dmamux.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_edma.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_gpio.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_lpi2c.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_lpi2c_edma.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_smc.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_str.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\IDLE_task.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Inputs.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\logger.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\main.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Mem_man.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\Monitor_serial_drv.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\MonitorVT100.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\NV_store.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\OLED_control.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Outputs.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\Params_editor.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Sdelay.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\startup_MKE18F16.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\system_MKE18F16.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Time_utils.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_allocate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_release.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_allocate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_search.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_release.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_set.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_set_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit\tx_execution_profile.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_iar.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_high_level.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_kernel_enter.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_kernel_setup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\tx_initialize_low_level.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_misra.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_priority_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_flush.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_front_send.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_receive.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_send.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_send_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_ceiling_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_cleanup.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_put_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_context_restore.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_context_save.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_entry_exit_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_identify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_control.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_disable.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_restore.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_preemption_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_priority_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_relinquish.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_reset.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_resume.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_schedule.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_shell_entry.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_sleep.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_analyze.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_stack_build.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_error_handler.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_error_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_suspend.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_preempt_check.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_resume.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_system_return.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_suspend.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_terminate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_time_slice.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_time_slice_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_timeout.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_wait_abort.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_time_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_time_set.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_activate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_deactivate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_expiration_process.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_timer_interrupt.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_performance_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_performance_system_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_system_activate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_system_deactivate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_thread_entry.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_buffer_full_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_disable.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_enable.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_event_filter.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_event_unfilter.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_initialize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_interrupt_control.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_isr_enter_insert.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_isr_exit_insert.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_object_register.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_object_unregister.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_user_event_insert.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_allocate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_release.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_allocate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_release.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_set.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_set_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_flush.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_front_send.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_receive.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_send.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_send_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_ceiling_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_prioritize.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_put.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_put_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_entry_exit_notify.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_info_get.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_preemption_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_priority_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_relinquish.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_reset.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_resume.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_suspend.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_terminate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_time_slice_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_wait_abort.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_activate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_change.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_create.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_deactivate.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_delete.o"
-#        "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_info_get.o"
+#        -f
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map.rsp
+#        (d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\ACS37800.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Analog_inputs.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\App_utils.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_ADC.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_CAN.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_clock_config.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_DMA.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_Flash.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_FreeMaster_vars.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_I2C.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\BKMAN1_2_monitor.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_Params.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\BKMAN1_2_Params_dyn_tables.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_PINS.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_PIT.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_SPI.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial\BKMAN1_2_UART.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\CRC_utils.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\DCDC_DAC80501.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Filters.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_appcmd.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_can.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_pdbdm.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_pipes.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_protocol.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_rec.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_scope.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_serial.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver\freemaster_serial_lpuart.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_sha.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster_task.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_tsa.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_ures.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\freemaster_utils.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster_vars_map.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_clock.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_common.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_dmamux.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_edma.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_gpio.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_lpi2c.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_lpi2c_edma.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_smc.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\fsl_str.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\IDLE_task.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Inputs.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\logger.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\main.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Mem_man.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\Monitor_serial_drv.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\MonitorVT100.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters\NV_store.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\OLED_control.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Outputs.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100\Params_editor.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Sdelay.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\startup_MKE18F16.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL\system_MKE18F16.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Time_utils.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_allocate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_pool_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_block_release.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_allocate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_pool_search.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_byte_release.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_set.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_event_flags_set_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit\tx_execution_profile.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_iar.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_high_level.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_kernel_enter.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_initialize_kernel_setup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\tx_initialize_low_level.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_misra.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_priority_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_mutex_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_flush.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_front_send.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_receive.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_send.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_queue_send_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_ceiling_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_cleanup.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_semaphore_put_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_context_restore.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_context_save.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_entry_exit_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_identify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_control.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_disable.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_interrupt_restore.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_preemption_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_priority_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_relinquish.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_reset.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_resume.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_schedule.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_shell_entry.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_sleep.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_analyze.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_stack_build.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_error_handler.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_stack_error_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_suspend.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_preempt_check.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_resume.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_thread_system_return.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_system_suspend.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_terminate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_time_slice.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_time_slice_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_timeout.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_thread_wait_abort.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_time_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_time_set.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_activate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_deactivate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_expiration_process.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src\tx_timer_interrupt.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_performance_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_performance_system_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_system_activate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_system_deactivate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_timer_thread_entry.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_buffer_full_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_disable.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_enable.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_event_filter.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_event_unfilter.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_initialize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_interrupt_control.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_isr_enter_insert.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_isr_exit_insert.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_object_register.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_object_unregister.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\tx_trace_user_event_insert.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_allocate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_pool_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_block_release.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_allocate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_pool_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_byte_release.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_set.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_event_flags_set_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_mutex_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_flush.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_front_send.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_receive.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_send.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_queue_send_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_ceiling_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_prioritize.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_put.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_semaphore_put_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_entry_exit_notify.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_info_get.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_preemption_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_priority_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_relinquish.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_reset.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_resume.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_suspend.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_terminate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_time_slice_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_thread_wait_abort.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_activate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_change.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_create.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_deactivate.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_delete.o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src\txe_timer_info_get.o
 #        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
-#        --no_out_extension -o "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\RPWRS.out"
-#        --map "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map"
-#        --config "d:\Embedded\Projects\OpenSource\Backup
-#        controller_v2.0\Software\Regulated_power_source/MKE18F512xxx16_flash.icf"
+#        --no_out_extension -o
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\RPWRS.out
+#        --map
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\list\RPWRS.map
+#        --config
+#        d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source/MKE18F512xxx16_flash.icf
 #        --semihosting --entry __iar_program_start --vfe --threaded_lib
 #        --text_out locale)
 #
@@ -1492,7 +1234,7 @@ command line/config:
     --------------------------------------------------------------------
     Total:
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP: [1]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP: [1]
     ACS37800.o                          1'080               274       24
     Analog_inputs.o                       248
     App_utils.o                           104
@@ -1514,7 +1256,7 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                              9'268             4'379   14'845
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster: [2]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster: [2]
     freemaster_appcmd.o                   572               156       59
     freemaster_pipes.o                  1'516               156      324
     freemaster_protocol.o                 976               337       44
@@ -1527,12 +1269,12 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                             10'868             1'589    4'906
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver: [3]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver: [3]
     freemaster_serial_lpuart.o            468                48        4
     --------------------------------------------------------------------
     Total:                                468                48        4
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters: [4]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters: [4]
     BKMAN1_2_FreeMaster_vars.o             16                34
     BKMAN1_2_Params.o                                       443
     BKMAN1_2_Params_dyn_tables.o           92               267      180
@@ -1540,7 +1282,7 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                                916               920      180
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial: [5]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial: [5]
     BKMAN1_2_ADC.o                      1'646                72      317
     BKMAN1_2_CAN.o                      2'180                96      953
     BKMAN1_2_DMA.o                        452
@@ -1554,7 +1296,7 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                             10'522       44    2'657    1'932
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100: [6]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100: [6]
     BKMAN1_2_monitor.o                    736             2'711
     MonitorVT100.o                      2'016               669       18
     Monitor_serial_drv.o                  726                80      108
@@ -1562,7 +1304,7 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                              7'830             4'017      134
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL: [7]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL: [7]
     fsl_clock.o                         1'424               168        4
     fsl_edma.o                            472               116       64
     fsl_lpi2c.o                         2'404               470       24
@@ -1570,16 +1312,16 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                              4'448               756       96
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX: [8]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX: [8]
     tx_initialize_low_level.o             116                         16
     --------------------------------------------------------------------
     Total:                                116                         16
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit: [9]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit: [9]
     --------------------------------------------------------------------
     Total:
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src: [10]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src: [10]
     tx_iar.o                              304                24      224
     tx_thread_schedule.o                  192
     tx_thread_stack_build.o                68
@@ -1587,7 +1329,7 @@ d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_
     --------------------------------------------------------------------
     Total:                                748                24      224
 
-d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src: [11]
+d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src: [11]
     tx_byte_allocate.o                    248
     tx_byte_pool_cleanup.o                136
     tx_byte_pool_create.o                 160
@@ -2954,17 +2696,17 @@ vt100_allocations       0x1fff'dffa     0x2  Data  Lc  MonitorVT100.o [6]
 wvar                    0x1fff'd3e8    0x84  Data  Gb  main.o [1]
 
 
-[1] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP
-[2] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster
-[3] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver
-[4] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters
-[5] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial
-[6] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100
-[7] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL
-[8] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX
-[9] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit
-[10] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src
-[11] = d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src
+[1] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP
+[2] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster
+[3] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\FreeMaster\driver
+[4] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Parameters
+[5] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\Peripherial
+[6] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\APP\VT100
+[7] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\FSL
+[8] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX
+[9] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\execution_profile_kit
+[10] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\port\src
+[11] = d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\OUTPUT\obj\RegulatedPowerSource\ThreadX\src
 [12] = dl7M_tln.a
 [13] = m7M_tls.a
 [14] = rt7M_tl.a

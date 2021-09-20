@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --backend -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --backend -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --debug_file=$debugfile --backend -f "d:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.general.xcl" --debug_file=$debugfile --backend -f "d:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\Regulated_power_source\settings\RPWRS.debug.driver.xcl" 
 }

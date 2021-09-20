@@ -5,7 +5,7 @@
 
 const T_parmenu parmenu[2]=
 {
-  {BKMAN1_2_0,BKMAN1_2_main,"Parameters and settings","PARAMETERS", -1},//  Основная категория
+  {BKMAN1_2_0,BKMAN1_2_main,"Parameters and settings","PARAMETERS", -1},//  РћСЃРЅРѕРІРЅР°СЏ РєР°С‚РµРіРѕСЂРёСЏ
   {BKMAN1_2_main,BKMAN1_2_General,"General settings","GENERAL SETTINGS", -1},//  
 };
 
@@ -69,7 +69,7 @@ const T_work_params dwvar[3]=
 };
  
  
-// Selector description:  Выбор между Yes и No
+// Selector description:  Р’С‹Р±РѕСЂ РјРµР¶РґСѓ Yes Рё No
 static const T_selector_items selector_1[2] = 
 {
   {0, "No", 0},

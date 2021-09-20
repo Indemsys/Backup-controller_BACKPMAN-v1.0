@@ -277,10 +277,10 @@
 #define TX_TIMER_THREAD_STACK_SIZE              1024
 #define TX_TIMER_THREAD_PRIORITY                1
 
-// Не включаем эту возможность поскольку большинство прерываний с высоким приоритем используют сервис RTOS для передачи флагов
+// РќРµ РІРєР»СЋС‡Р°РµРј СЌС‚Сѓ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРѕСЃРєРѕР»СЊРєСѓ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РїСЂРµСЂС‹РІР°РЅРёР№ СЃ РІС‹СЃРѕРєРёРј РїСЂРёРѕСЂРёС‚РµРј РёСЃРїРѕР»СЊР·СѓСЋС‚ СЃРµСЂРІРёСЃ RTOS РґР»СЏ РїРµСЂРµРґР°С‡Рё С„Р»Р°РіРѕРІ
 //#define __NVIC_PRIO_BITS                        4
 //#define TX_PORT_USE_BASEPRI
-//#define TX_PORT_BASEPRI                         (14 << (8 - __NVIC_PRIO_BITS))  // Маска приоритета в регистре BASEPRI запрещающая прерывания PendSV и  SysTick
+//#define TX_PORT_BASEPRI                         (14 << (8 - __NVIC_PRIO_BITS))  // РњР°СЃРєР° РїСЂРёРѕСЂРёС‚РµС‚Р° РІ СЂРµРіРёСЃС‚СЂРµ BASEPRI Р·Р°РїСЂРµС‰Р°СЋС‰Р°СЏ РїСЂРµСЂС‹РІР°РЅРёСЏ PendSV Рё  SysTick
 
 #define TX_MAX_PRIORITIES                       32
 #define TX_DISABLE_PREEMPTION_THRESHOLD
