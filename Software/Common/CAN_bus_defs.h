@@ -1,12 +1,13 @@
-#ifndef CAN_BUS_DEFS_H
+п»ї#ifndef CAN_BUS_DEFS_H
   #define CAN_BUS_DEFS_H
 
-  #define   REQUEST_STATE_TO_ALL              0x00000001  // Команда всем передать свое состояние
 
-  #define   BCKPC_STATE_PACKET                0x00000060  // Ответ контроллера резервного питания.
-  #define   BCKPC_CMD_PACKET                  0x00000070  // Команда контроллеру резервного питания.
+  #define   REQUEST_STATE_TO_ALL              0x00000001  // РљРѕРјР°РЅРґР° РІСЃРµРј РїРµСЂРµРґР°С‚СЊ СЃРІРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ
 
-  #define   ALL_ENTER_TO_WRK_MOD              0x00001000  // Команда всем перейти в рабочий режим
+  #define   BCKPC_STATE_PACKET                0x00000060  // РћС‚РІРµС‚ РєРѕРЅС‚СЂРѕР»Р»РµСЂР° СЂРµР·РµСЂРІРЅРѕРіРѕ РїРёС‚Р°РЅРёСЏ.
+  #define   BCKPC_CMD_PACKET                  0x00000070  // РљРѕРјР°РЅРґР° РєРѕРЅС‚СЂРѕР»Р»РµСЂСѓ СЂРµР·РµСЂРІРЅРѕРіРѕ РїРёС‚Р°РЅРёСЏ.
+
+  #define   ALL_ENTER_TO_WRK_MOD              0x00001000  // РљРѕРјР°РЅРґР° РІСЃРµРј РїРµСЂРµР№С‚Рё РІ СЂР°Р±РѕС‡РёР№ СЂРµР¶РёРј
 
 
 #endif // CAN_BUS_DEFS_H
