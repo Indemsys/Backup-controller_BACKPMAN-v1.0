@@ -4,6 +4,7 @@
  - Описание схемы (https://habr.com/ru/post/557242/) 
  - Описание разработки платы (https://habr.com/ru/post/562462/)
  - Установка Azure RTOS (https://habr.com/ru/post/573352/)
+ - Технологии отладки и тюнинг платы (https://habr.com/ru/post/574088/)  
  
 
 ![Animated](https://user-images.githubusercontent.com/12375003/130319331-6bef8539-8da9-4f4c-a86c-8b25ab7f2064.gif)
