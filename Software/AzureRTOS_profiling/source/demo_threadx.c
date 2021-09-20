@@ -1,6 +1,7 @@
-/* This is a small demo of the high-performance ThreadX kernel.  It includes examples of eight
+﻿/* This is a small demo of the high-performance ThreadX kernel.  It includes examples of eight
    threads of different priorities, using a message queue, semaphore, mutex, event flags group,
    byte pool, and block pool.  */
+
 
 #include "fsl_device_registers.h"
 #include "fsl_debug_console.h"

@@ -1,7 +1,6 @@
-#include "fsl_device_registers.h"
+п»ї#include "fsl_device_registers.h"
 #include "fsl_debug_console.h"
 #include "board.h"
-
 #include "pin_mux.h"
 #include "clock_config.h"
 
@@ -17,7 +16,7 @@
 TX_THREAD               main_thread;
 TX_THREAD               thread1;
 TX_THREAD               thread2;
-#pragma data_alignment=8  
+#pragma data_alignment=8
 uint8_t                 thread_main_stack[THREAD_MAIN_STACK_SIZE];
 #pragma data_alignment=8
 uint8_t                 thread_1_stack[THREAD_1_STACK_SIZE];
@@ -29,7 +28,7 @@ static void             Thread_main(ULONG initial_input);
 static void             Thread_1(ULONG initial_input);
 static void             Thread_2(ULONG initial_input);
 /*-----------------------------------------------------------------------------------------------------
-  Модифицированная функция из SDK
+  РњРѕРґРёС„РёС†РёСЂРѕРІР°РЅРЅР°СЏ С„СѓРЅРєС†РёСЏ РёР· SDK
 
   \param void
 
@@ -45,7 +44,7 @@ int main(void)
 }
 
 /*-----------------------------------------------------------------------------------------------------
-  Вспомогательная функция для создания первичной задачи
+  Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ С„СѓРЅРєС†РёСЏ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РїРµСЂРІРёС‡РЅРѕР№ Р·Р°РґР°С‡Рё
 
   \param first_unused_memory
 -----------------------------------------------------------------------------------------------------*/
@@ -70,7 +69,7 @@ void    tx_application_define(void *first_unused_memory)
 }
 
 /*-----------------------------------------------------------------------------------------------------
-  Первичная задача
+  РџРµСЂРІРёС‡РЅР°СЏ Р·Р°РґР°С‡Р°
 
   \param initial_input
 -----------------------------------------------------------------------------------------------------*/
@@ -96,8 +95,8 @@ static void Thread_main(ULONG initial_input)
 
 
 /*-----------------------------------------------------------------------------------------------------
-  Две задачи для проверки в отладчике ленивого сохранения контекста FPU 
-  
+  Р”РІРµ Р·Р°РґР°С‡Рё РґР»СЏ РїСЂРѕРІРµСЂРєРё РІ РѕС‚Р»Р°РґС‡РёРєРµ Р»РµРЅРёРІРѕРіРѕ СЃРѕС…СЂР°РЅРµРЅРёСЏ РєРѕРЅС‚РµРєСЃС‚Р° FPU
+
 -----------------------------------------------------------------------------------------------------*/
 volatile float fv;
 static void Thread_1(ULONG initial_input)

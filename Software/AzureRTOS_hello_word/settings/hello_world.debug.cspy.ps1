@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.general.xcl" --backend -f "D:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.general.xcl" --backend -f "D:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Embedded\Projects\OpenSource\Backup controller_v2.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Embedded\Projects\OpenSource\Backup_controller_v1.0\Software\AzureRTOS_hello_word\settings\hello_world.debug.driver.xcl" 
 }
